@@ -16,7 +16,7 @@ const CONFIG = {
   phone: "+91 74474 87279",
   linkedin: "https://linkedin.com/in/your-handle",
   github: "ROHITBARWALHVKFNF",
-  resumeUrl: "https://drive.google.com/file/d/1wDgForcVsnFfTj0-evyQ49v8_oT4ppLz/view?usp=drivesdk",
+  resumeUrl: "https://drive.google.com/file/d/1kFEE9EH5VqdOOI3jmOUwmekrEny5asZ-/view?usp=drivesdk",
 };
 
 const NAV = [
@@ -222,6 +222,63 @@ const PROJECTS = [
       "Investment Research Agent",
       "Investor Dashboard"
     ]
+  },
+  {
+    tag: "COMPUTER VISION + DEEP LEARNING",
+    title: "Medical Image Disease Detection using Deep Learning",
+
+    github: "https://github.com/ROHITBARWALHVKFNF/Medical-Image-Disease-Detection-using-Deep-Learning",
+
+    problem:
+      "Healthcare professionals must analyze thousands of medical images daily, making disease diagnosis time-consuming and prone to human error. Manual interpretation of chest X-rays can delay diagnosis, while subtle abnormalities may be overlooked. An AI-powered system can assist clinicians by providing fast, accurate, and explainable disease predictions.",
+
+    approach:
+      "An end-to-end deep learning platform that leverages transfer learning to classify diseases from medical images. The system preprocesses medical images, performs disease prediction using pretrained CNN models, explains predictions with Grad-CAM visualizations, tracks experiments with MLflow, stores prediction history, and serves results through FastAPI and Streamlit. The application is containerized with Docker and designed for cloud deployment.",
+
+    stack: [
+      "Python",
+      "PyTorch",
+      "OpenCV",
+      "Transfer Learning",
+      "ResNet50",
+      "EfficientNet",
+      "DenseNet121",
+      "Grad-CAM",
+      "FastAPI",
+      "Streamlit",
+      "MLflow",
+      "SQLite",
+      "PostgreSQL",
+      "Docker",
+      "GitHub Actions",
+      "AWS"
+    ],
+
+    outcomes: [
+      "Automated medical image classification",
+      "Disease prediction with confidence scores",
+      "Transfer learning-based diagnosis",
+      "Grad-CAM explainable AI visualizations",
+      "Medical image preprocessing pipeline",
+      "Prediction history management",
+      "REST API for inference",
+      "Interactive Streamlit dashboard",
+      "Experiment tracking with MLflow",
+      "Cloud-ready Docker deployment"
+    ],
+
+    flow: [
+      "Medical Image Upload",
+      "Image Preprocessing",
+      "Transfer Learning Model",
+      "Disease Prediction",
+      "Confidence Score Generation",
+      "Grad-CAM Explainability",
+      "Prediction Validation",
+      "Prediction History Storage",
+      "FastAPI Backend",
+      "Streamlit Dashboard"
+    ]
   }
 ];
 
@@ -284,7 +341,7 @@ const EXPERIENCE = [
     role: "Independent Project Lead", org: "Earnings Call Sentiment Platform",
     desc: "A multi-agent financial research system where specialized AI agents collaborate to retrieve earnings transcripts, analyze management sentiment, detect guidance changes, forecast stock reactions, perform event studies, validate findings, and generate investment recommendations.",
   },
-  
+
   {
     role: "In progress", org: "AI Automation for Indian SMEs",
     desc: "Designing voice and WhatsApp AI agents for dental clinics, real estate, Pharmacy and coaching institutes.",
@@ -592,8 +649,7 @@ export default function Portfolio() {
               {CONFIG.roles.map((r) => <Pill key={r}>{r}</Pill>)}
             </div>
             <p className="text-base leading-relaxed mb-8 max-w-md boot-3" style={{ color: "var(--muted)" }}>
-              I build the layer between sensors and decisions — computer vision pipelines,
-              embedded control loops, and AI systems that run continuously, not just in a notebook.
+              I build intelligent software and automation systems that bridge the physical and digital worlds. By combining robotics, embedded systems, computer vision, machine learning, and modern software engineering, I develop end-to-end solutions from hardware integration and data processing to AI-driven decision-making and scalable applications. My focus is on building reliable, maintainable, and production-ready systems that deliver measurable real-world impact.
             </p>
             <div className="flex flex-wrap gap-3 boot-3">
               <button
@@ -630,13 +686,10 @@ export default function Portfolio() {
         <Reveal>
           <Eyebrow>about</Eyebrow>
           <h2 className="font-display text-2xl sm:text-3xl font-semibold mb-6 max-w-xl">
-            Engineer who ships, not just prototypes
+            Engineering intelligent systems that solve real-world problems
           </h2>
           <p className="max-w-2xl leading-relaxed mb-10" style={{ color: "var(--muted)" }}>
-            Final-year Automation &amp; Robotics engineer who builds across the full stack —
-            embedded control, computer vision, and the software layer that turns a model's
-            output into a decision a real system can act on. Comfortable working from a
-            servo's pulse width up to a production API.
+            I specialize in designing and developing end to end, AI driven systems by combining robotics, embedded engineering, computer vision, machine learning, and scalable software architecture. From controlling hardware at the edge to deploying cloud-based AI applications, I focus on building robust, production-ready solutions that are practical, efficient, and designed for real-world impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-8">
             <div className="flex items-start gap-3">
